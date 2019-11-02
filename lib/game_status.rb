@@ -26,8 +26,4 @@ end
 end
 
 def full?(board)
-  position_taken?(board, index).all?
-  return true
-else
-  false
-end
+  
