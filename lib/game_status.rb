@@ -18,7 +18,7 @@ def won?(board)
   WIN_COMBINATIONS.each do |win_combo|
 if win_combo == ["X", "X", "X"] || ["O", "O", "O"]
   return win_combo
-else 
+else
   false
 end
 end
