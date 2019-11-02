@@ -30,3 +30,8 @@ board.all? do |index|
 index == "X" || index == "O"
 end
 end
+
+def draw?(board)
+  if full?(board) && !won?(board)
+  end
+end
