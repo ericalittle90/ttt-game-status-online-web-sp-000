@@ -26,5 +26,8 @@ end
 end
 
 def full?(board)
-board.all? do { |index| index == "X" || index == "O"}
+  position_taken?(board, index).all?
+  return true
+else
+  false
 end
