@@ -26,10 +26,5 @@ end
 end
 
 def full?(board)
-board.all? do |index|
-  if index == "X" || index == "O"
-    true
-  else
-    false
-end
+board.all? do { |index| index == "X" || index == "O"}
 end
