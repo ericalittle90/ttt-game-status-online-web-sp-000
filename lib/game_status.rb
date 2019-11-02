@@ -15,10 +15,10 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  WIN_COMBINATIONS.any? do |index|
-     if (board[index[0]] == "X" && board[index[1]] == "X" && board[index[2]] == "X") ||
-        (board[index[0]] == "O" && board[index[1]] == "O" && board[index[2]] == "O")
-true
+  WIN_COMBINATIONS.each do |win_combo|
+if win_combo == ["X", "X", "X"] || ["O", "O", "O"]
+  return win_combo
+else false
 end
 end
 end
