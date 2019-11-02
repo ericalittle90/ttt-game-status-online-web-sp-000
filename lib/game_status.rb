@@ -46,3 +46,11 @@ else
   false
 end
 end
+
+def winner(board)
+  if won?(board)
+    return index
+  else
+    false
+  end
+end
