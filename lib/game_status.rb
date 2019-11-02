@@ -27,5 +27,5 @@ end
 
 def full?(board)
 board.all? do |index|
-  index == "X" || index == "O"
+if  (board[index[]] == "X") || (board[index[]] == "O")
 end
