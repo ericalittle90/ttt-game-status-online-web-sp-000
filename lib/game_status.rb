@@ -26,7 +26,7 @@ end
 end
 
 def full?(board)
-  if position_taken?(board, index).all? do |index|
+  if position_taken?(board, index).all? do
   else
     false
   end
